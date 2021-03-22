@@ -1,89 +1,66 @@
-@import './animation.less';
+@prefix: DynamicCard;
 
-@popupPrefix: react-easy-popup;
-
-.@{popupPrefix} {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1999;
-  pointer-events: none; // 特别注意：为none时可以产生点透的效果 就当容器节点不存在
-
-  /* position为center时 使用flex居中 */
-  &__center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .@{popupPrefix}-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none; // mask默认隐藏
-    width: 100%;
-    height: 100%;
+.@{prefix}- {
+  &root {
+    border: 1px solid #e2dede;
+    padding: 20px;
+    border-radius: 8px;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.72);
-    pointer-events: auto;
-
-    &__visible {
-      display: block; // 展示mask
+    .add-button{
+      margin-bottom: 15px;
+      color: #fff;
+      background: #1890ff;
+      border-color: #1890ff;
+      text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+      height: 40px;
+      padding: 6.4px 22px;
+      font-size: 16px;
+      border-radius: 4px;
+      outline: 0;
+      line-height: 1.5715;
+      position: relative;
+      display: inline-block;
+      font-weight: 400;
+      white-space: nowrap;
+      text-align: center;
+      cursor: pointer;
+      transition: all .3s;
+      user-select: none;
     }
-
-    // fix some android webview opacity render bug
-    &::before {
-      display: block;
-      width: 1px;
-      height: 1px;
-      margin-left: -10px;
-      background-color: rgba(0, 0, 0, 0.1);
-      content: '.';
-    }
-  }
-
-  .@{popupPrefix}-content {
-    position: relative;
-    width: 100%;
-    color: rgba(113, 113, 113, 1);
-    pointer-events: auto;
-    -webkit-overflow-scrolling: touch; /* ios5+ */
-    ::-webkit-scrollbar {
-      display: none;
-    }
-
-    &__top {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
-    &__bottom {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-    }
-
-    &__left {
-      position: absolute;
-      width: auto;
-      max-width: 100%;
-      height: 100%;
-    }
-
-    &__right {
-      position: absolute;
-      right: 0;
-      width: auto;
-      max-width: 100%;
-      height: 100%;
-    }
-
-    &__center {
-      width: auto;
-      max-width: 100%;
+    .card{
+      position: relative;
+      margin-bottom: 15px;
+      transition: border 0.3s;
+      &:hover{
+        border: 1px dashed #ff7272;
+        .cancelBox{
+          i{
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+      }
+      .cancelBox{
+        position: absolute;
+        right: 13px;
+        top: 19px;
+        i{
+          font-size: 20px;
+          color: #ff7272;
+          opacity: 0;
+          transform: scale(0);
+          transform-origin: center center;
+          cursor: pointer;
+          z-index: 3;
+          transition: all 0.3s;
+          &:hover{
+            color: red;
+          }
+        }
+      }
+      .ant-card-body{
+        padding: 10px;
+      }
     }
   }
 }

@@ -30,7 +30,8 @@
     "prepare": "tsdx build",
     "predeploy": "npm run build && cd example && npm run build",
     "deploy": "gh-pages -d ./example/dist",
-    "release": "np --no-yarn --no-tests --no-cleanup"
+    "release": "np --no-yarn --no-tests --no-cleanup",
+    "docs": "npx readme-md-generator -y"
   },
   "browserslist": [
     "last 2 versions",
@@ -42,7 +43,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": ""
     }
   },
   "prettier": {
