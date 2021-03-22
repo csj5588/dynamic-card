@@ -1,7 +1,7 @@
 {
-  "homepage": "https://worldzhao.github.io/react-easy-popup",
-  "repository": "https://github.com/worldzhao/react-easy-popup",
-  "version": "0.2.4",
+  "homepage": "https://csj5588.github.io/dynamic-card",
+  "repository": "https://github.com/csj5588/dynamic-card",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -54,10 +54,10 @@
   },
   "name": "react-easy-popup",
   "authors": {
-    "name": "worldzhao",
-    "email": "1007326924@qq.com"
+    "name": "csj5588",
+    "email": "1839333350@qq.com"
   },
-  "module": "dist/react-easy-popup.esm.js",
+  "module": "dist/dynamic-card.esm.js",
   "devDependencies": {
     "@types/classnames": "^2.2.10",
     "@types/react": "^16.9.35",
