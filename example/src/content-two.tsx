@@ -32,7 +32,7 @@ const ContentTwo = () => {
           <h2>Has DefaultNum</h2>
           <p>You can specify the initial data length</p>
           <p>Components render based on initial length</p>
-          <img src="https://z3.ax1x.com/2021/03/23/6Tf5Oe.png" alt="" />
+          <img src="https://z3.ax1x.com/2021/03/23/6TqD9H.png" alt="" />
         </div>
       </div>
     </div>

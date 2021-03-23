@@ -27,7 +27,7 @@ const ContentOne = () => {
           <h2>Base Demo</h2>
           <p>The basic initial structure, with add, delete function</p>
           <p>the code structure is as follows</p>
-          <img src="https://z3.ax1x.com/2021/03/23/6TWkEn.png" alt="" />
+          <img src="https://z3.ax1x.com/2021/03/23/6Tq04e.png" alt="" />
         </div>
       </div>
       <div className="label">
