@@ -1,7 +1,7 @@
 {
   "homepage": "https://csj5588.github.io/dynamic-card",
   "repository": "https://github.com/csj5588/dynamic-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
