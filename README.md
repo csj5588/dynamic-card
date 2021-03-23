@@ -15,7 +15,7 @@
 
 - node >=10
 
-## Install
+## Install with [npm](https://www.npmjs.com/package/dynamic-cards)
 
 ```sh
 yarn install dynamic-cards
