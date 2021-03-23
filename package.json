@@ -13,8 +13,8 @@
   "keywords": [
     "react",
     "component",
-    "portal",
-    "popup"
+    "dynamic",
+    "cards"
   ],
   "engines": {
     "node": ">=10"
