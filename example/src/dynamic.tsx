@@ -1,11 +1,8 @@
-import 'react-app-polyfill/ie11';
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
 
+import { DynamicCard } from '../../src';
 
-import { DynamicCard } from '../src';
-
-const App = () => {
+const Dynamic = () => {
   const timeout = (ms: number) => {
     return new Promise(resolve => setTimeout(() => {
       resolve(console.log('done'))
@@ -29,7 +26,7 @@ const App = () => {
       >
         {(key) => {
           return (
-            <p className="block">这是第{key}张卡片内容</p>
+            <p className="block">this card key number with {key}</p>
           )
         }}
       </DynamicCard>
@@ -37,4 +34,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default Dynamic

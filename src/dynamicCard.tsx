@@ -31,7 +31,7 @@ type IState = {
 class DynamicCard extends React.Component<IPrps, IState> {
   state: IState = {
     count: 0,
-    order: [0],
+    order: [],
     defaultInitial: false,
     addLoading: false,
   };
@@ -74,10 +74,10 @@ class DynamicCard extends React.Component<IPrps, IState> {
     }
 
     confirm({
-      title: '确认删除？',
+      title: 'del this?',
       onOk: deleteByKey,
-      okText: '确认',
-      cancelText: '取消',
+      okText: 'sure',
+      cancelText: 'cancel',
       onCancel: () => {
         console.log('cancel');
       },
